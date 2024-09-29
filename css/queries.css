@@ -1,0 +1,287 @@
+/* small desktops Below 1344px, 1344/16=84em */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* landscape tablets Below 1200px, 1200/16=75em */
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16 = 0.5625 = 56.25 */
+    font-size: 56.25%;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    row-gap: 6.4rem;
+    column-gap: 4.8rem;
+  }
+
+  .header {
+    padding: 0 4.8rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonial-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/* tablets Below 944px, 944/16=59em  */
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-customer-img-box {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-text-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-details {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .testimonial-section {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-form-btn {
+    margin-top: 1.2rem;
+  }
+
+  .card-btn {
+    font-size: 1.8rem !important;
+  }
+
+  .cta-section {
+    padding: 3.2rem 0 6.4rem 0;
+  }
+
+  .nav-button {
+    display: block;
+  }
+
+  .header-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.973);
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+  }
+
+  .nav-open .header-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-list a:link,
+  a:visited {
+    font-size: 3rem;
+  }
+
+  .nav-open .nav-button-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .nav-button-icon[name="menu-outline"] {
+    display: none;
+  }
+}
+
+/* tablets Below 704px, 704/16=44em  */
+
+@media (max-width: 44em) {
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .diet-list {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .price-card {
+    width: 100%;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .contact-us,
+  .footer-logo {
+    grid-column: span 3;
+  }
+
+  .meal-section {
+    padding: 4.8rem 0;
+  }
+
+  .section-how {
+    padding: 9.6rem 0 4.8rem 0;
+  }
+
+  .footer {
+    padding: 6.4rem 0;
+  }
+}
+
+/* Phones of 544px and less, 544/16=34em  */
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid-2-cols,
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .cta-text {
+    padding: 2.4rem;
+  }
+
+  .nav-button {
+    display: block;
+    z-index: 9;
+  }
+}
